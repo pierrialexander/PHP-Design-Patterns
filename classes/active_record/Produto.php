@@ -95,4 +95,15 @@ class Produto
         $data =  $result->fetchObject();
         return $data->max;
     }
+
+    public function getMargemLucro()
+    {
+        return (($this->preco_venda - $this->preco_custo) / $this->preco_custo) * 100;
+    }
+
+    public function registraCompra($custo, $quantidade)
+    {
+        $this->preco_custo = $custo;
+        $this->estoque += $quantidade;
+    }
 }
