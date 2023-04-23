@@ -1,6 +1,6 @@
 <?php
 /**
- * Classe padrão Data Mapper de Venda
+ * Classe de Venda para o m
  * @author Pierri Alexander Vidmar
  */
 class Venda {
