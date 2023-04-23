@@ -1,5 +1,8 @@
 <?php
 
+/**
+ * Classe active record Produto
+ */
 class Produto
 {
     // vetor que armazenará os dados que serão persistidos na base.
