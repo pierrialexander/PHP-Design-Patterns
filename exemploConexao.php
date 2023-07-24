@@ -9,9 +9,15 @@ try {
     
     $produto = new Produto();
     $produto->descricao = "Café Novo";
-    $produto->
-    
-    
-} catch (Exception $e) {
+    $produto->estoque = 100;
+    $produto->preco_custo = 4;
+    $produto->preco_venda = 7;
+    $produto->codigo_barras = '123123123';
+    $produto->data_cadastro = date('Y-m-d');
+    $produto->origem = 'N';
+    $produto->save();  
+} 
+catch (Exception $e) 
+{
     echo $e->getMessage();
 }
