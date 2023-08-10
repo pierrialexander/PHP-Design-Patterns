@@ -1,7 +1,6 @@
 <?php
 /**
  * Description of Connection
- *
  * @author pierri
  */
 class Connection {
@@ -9,14 +8,14 @@ class Connection {
        
     }
     
-    public static function open($name)
+    public static function open($file)
     {
-        if(file_exists("config/{$name}.ini"))
+        if(file_exists("config/{$file}.ini"))
         {
-            parse_ini_file("config/{$name}.ini");
+            $db = parse_ini_file("config/{$file}.ini");
         }
         else {
-            throw new Exception("arquivo {$name} não encontrado!");
+            throw new Exception("arquivo {$file} não encontrado!");
         }
         
         $user = isset($db['user']) ? $db['user'] : null;

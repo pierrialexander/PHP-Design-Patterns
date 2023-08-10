@@ -8,14 +8,14 @@ try {
     Produto::setConnection($conn);
     
     $produto = new Produto();
-    $produto->descricao = "Café Novo";
-    $produto->estoque = 100;
-    $produto->preco_custo = 4;
-    $produto->preco_venda = 7;
-    $produto->codigo_barras = '123123123';
+    $produto->descricao = "Banana Nova";
+    $produto->estoque = 115;
+    $produto->preco_custo = 40;
+    $produto->preco_venda = 75;
+    $produto->codigo_barras = '123188823';
     $produto->data_cadastro = date('Y-m-d');
     $produto->origem = 'N';
-    $produto->save();  
+    $produto->save();
 } 
 catch (Exception $e) 
 {
