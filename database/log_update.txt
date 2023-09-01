@@ -1,0 +1,5 @@
+2023-08-31 23:28:49 : SELECT * FROM produto WHERE id = 14
+2023-08-31 23:28:49 : SELECT * FROM produto WHERE id = 14
+2023-08-31 23:28:49 : UPDATE produto SET id = 14, descricao = 'Cerveja Artesanal IPA', estoque = 60, preco_custo = 8, preco_venda = 12, codigo_barras = '123123123', origem = 'N' WHERE id = 14
+2023-08-31 23:41:47 : SELECT * FROM produto WHERE id = 14
+2023-08-31 23:41:47 : DELETE FROM produto WHERE ID = 14

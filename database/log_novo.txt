@@ -1,0 +1,4 @@
+2023-08-31 22:54:36 : SELECT max(id) FROM produto
+2023-08-31 22:54:36 : INSERT INTO produto (descricao, estoque, preco_custo, preco_venda, codigo_barra, origem, id)  VALUES  ('Cerveja Artesanal IPA', 50, 8, 12, '123123123123', 'N', 14) 
+2023-08-31 22:56:07 : SELECT max(id) FROM produto
+2023-08-31 22:56:07 : INSERT INTO produto (descricao, estoque, preco_custo, preco_venda, codigo_barras, origem, id)  VALUES  ('Cerveja Artesanal IPA', 50, 8, 12, '123123123123', 'N', 14) 
