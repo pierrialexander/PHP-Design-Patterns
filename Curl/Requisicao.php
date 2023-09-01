@@ -9,6 +9,11 @@ class Requisicao {
     public function __construct($urlBase) {
         $this->urlBase = $urlBase;
     }
+
+    public function getToken()
+    {
+        return $this->token;
+    }
     
     public function obterToken($uri = '', $method = 'GET', $data = []) {
         $curl = curl_init();
@@ -60,6 +65,36 @@ class Requisicao {
         $user = json_decode($data, true);
 
         $this->dados = $user;
+
+        return $this->dados;
+    }
+
+    /**
+     * Busca Ocorrências Azul Cargo
+     * @param [type] $chaveNota
+     * @return void
+     */
+    public function buscaRastreioAzul($chaveNota)
+    {
+        $curl = curl_init();
+
+        $headers = [
+            'Accept: application/json',
+            'Content-Type: application/json',
+        ];
+
+        curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
+        curl_setopt($curl, CURLOPT_CUSTOMREQUEST, "GET");
+        curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
+        curl_setopt($curl, CURLOPT_URL, $this->urlBase . "/api/Ocorrencias/Consultar?Token=" . $this->token . '&chaveNFE=' . $chaveNota);
+
+        $data = curl_exec($curl);
+
+        curl_close($curl);
+
+        $response = json_decode($data, true);
+        
+        $this->dados = $response;
 
         return $this->dados;
     }

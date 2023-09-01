@@ -1,0 +1,81 @@
+2023-09-01 20:35:56 : SELECT * FROM produto WHERE (preco_venda >= 35 and origem = 'N')
+2023-09-01 20:35:56 : SELECT * FROM produto WHERE id = 5
+2023-09-01 20:35:56 : UPDATE produto SET id = 5, descricao = 'Chocolate Doce', estoque = 15, preco_custo = 10, preco_venda = 35, codigo_barras = '123789823', data_cadastro = '2023-08-10', origem = 'N', produto_venda = 0 WHERE id = 5
+2023-09-01 20:36:38 : SELECT * FROM produto WHERE (preco_venda >= 35 and origem = 'N')
+2023-09-01 20:36:38 : SELECT * FROM produto WHERE id = 5
+2023-09-01 20:36:38 : UPDATE produto SET id = 5, descricao = 'Chocolate Doce', estoque = 15, preco_custo = 10, preco_venda = 45.5, codigo_barras = '123789823', data_cadastro = '2023-08-10', origem = 'N' WHERE id = 5
+2023-09-01 20:36:38 : SELECT * FROM produto WHERE id = 7
+2023-09-01 20:36:38 : UPDATE produto SET id = 7, descricao = 'Bacalhau azedo', estoque = 153, preco_custo = 140, preco_venda = 474.5, codigo_barras = '122229823', data_cadastro = '2023-08-10', origem = 'N' WHERE id = 7
+2023-09-01 20:36:38 : SELECT * FROM produto WHERE id = 8
+2023-09-01 20:36:38 : UPDATE produto SET id = 8, descricao = 'Bacalhau azedo', estoque = 3, preco_custo = 140, preco_venda = 474.5, codigo_barras = '122229823', data_cadastro = '2023-08-10', origem = 'N' WHERE id = 8
+2023-09-01 20:36:38 : SELECT * FROM produto WHERE id = 9
+2023-09-01 20:36:38 : UPDATE produto SET id = 9, descricao = 'Tilápia boa', estoque = 153, preco_custo = 140, preco_venda = 474.5, codigo_barras = '122229823', data_cadastro = '2023-08-10', origem = 'N' WHERE id = 9
+2023-09-01 20:36:38 : SELECT * FROM produto WHERE id = 10
+2023-09-01 20:36:38 : UPDATE produto SET id = 10, descricao = 'Salmão bom', estoque = 153, preco_custo = 140, preco_venda = 474.5, codigo_barras = '122229823', data_cadastro = '2023-08-10', origem = 'N' WHERE id = 10
+2023-09-01 20:36:38 : SELECT * FROM produto WHERE id = 11
+2023-09-01 20:36:38 : UPDATE produto SET id = 11, descricao = 'Salmão bom', estoque = 153, preco_custo = 140, preco_venda = 474.5, codigo_barras = '122229823', data_cadastro = '2023-08-10', origem = 'N' WHERE id = 11
+2023-09-01 20:36:39 : SELECT * FROM produto WHERE (preco_venda >= 35 and origem = 'N')
+2023-09-01 20:36:39 : SELECT * FROM produto WHERE id = 5
+2023-09-01 20:36:39 : UPDATE produto SET id = 5, descricao = 'Chocolate Doce', estoque = 15, preco_custo = 10, preco_venda = 59.15, codigo_barras = '123789823', data_cadastro = '2023-08-10', origem = 'N' WHERE id = 5
+2023-09-01 20:36:39 : SELECT * FROM produto WHERE id = 7
+2023-09-01 20:36:39 : UPDATE produto SET id = 7, descricao = 'Bacalhau azedo', estoque = 153, preco_custo = 140, preco_venda = 616.85, codigo_barras = '122229823', data_cadastro = '2023-08-10', origem = 'N' WHERE id = 7
+2023-09-01 20:36:39 : SELECT * FROM produto WHERE id = 8
+2023-09-01 20:36:39 : UPDATE produto SET id = 8, descricao = 'Bacalhau azedo', estoque = 3, preco_custo = 140, preco_venda = 616.85, codigo_barras = '122229823', data_cadastro = '2023-08-10', origem = 'N' WHERE id = 8
+2023-09-01 20:36:39 : SELECT * FROM produto WHERE id = 9
+2023-09-01 20:36:39 : UPDATE produto SET id = 9, descricao = 'Tilápia boa', estoque = 153, preco_custo = 140, preco_venda = 616.85, codigo_barras = '122229823', data_cadastro = '2023-08-10', origem = 'N' WHERE id = 9
+2023-09-01 20:36:39 : SELECT * FROM produto WHERE id = 10
+2023-09-01 20:36:39 : UPDATE produto SET id = 10, descricao = 'Salmão bom', estoque = 153, preco_custo = 140, preco_venda = 616.85, codigo_barras = '122229823', data_cadastro = '2023-08-10', origem = 'N' WHERE id = 10
+2023-09-01 20:36:39 : SELECT * FROM produto WHERE id = 11
+2023-09-01 20:36:39 : UPDATE produto SET id = 11, descricao = 'Salmão bom', estoque = 153, preco_custo = 140, preco_venda = 616.85, codigo_barras = '122229823', data_cadastro = '2023-08-10', origem = 'N' WHERE id = 11
+2023-09-01 20:36:45 : SELECT * FROM produto WHERE (preco_venda >= 35 and origem = 'N')
+2023-09-01 20:36:45 : SELECT * FROM produto WHERE id = 5
+2023-09-01 20:36:45 : UPDATE produto SET id = 5, descricao = 'Chocolate Doce', estoque = 15, preco_custo = 10, preco_venda = 76.895, codigo_barras = '123789823', data_cadastro = '2023-08-10', origem = 'N' WHERE id = 5
+2023-09-01 20:36:45 : SELECT * FROM produto WHERE id = 7
+2023-09-01 20:36:45 : UPDATE produto SET id = 7, descricao = 'Bacalhau azedo', estoque = 153, preco_custo = 140, preco_venda = 801.905, codigo_barras = '122229823', data_cadastro = '2023-08-10', origem = 'N' WHERE id = 7
+2023-09-01 20:36:45 : SELECT * FROM produto WHERE id = 8
+2023-09-01 20:36:45 : UPDATE produto SET id = 8, descricao = 'Bacalhau azedo', estoque = 3, preco_custo = 140, preco_venda = 801.905, codigo_barras = '122229823', data_cadastro = '2023-08-10', origem = 'N' WHERE id = 8
+2023-09-01 20:36:45 : SELECT * FROM produto WHERE id = 9
+2023-09-01 20:36:45 : UPDATE produto SET id = 9, descricao = 'Tilápia boa', estoque = 153, preco_custo = 140, preco_venda = 801.905, codigo_barras = '122229823', data_cadastro = '2023-08-10', origem = 'N' WHERE id = 9
+2023-09-01 20:36:45 : SELECT * FROM produto WHERE id = 10
+2023-09-01 20:36:45 : UPDATE produto SET id = 10, descricao = 'Salmão bom', estoque = 153, preco_custo = 140, preco_venda = 801.905, codigo_barras = '122229823', data_cadastro = '2023-08-10', origem = 'N' WHERE id = 10
+2023-09-01 20:36:45 : SELECT * FROM produto WHERE id = 11
+2023-09-01 20:36:45 : UPDATE produto SET id = 11, descricao = 'Salmão bom', estoque = 153, preco_custo = 140, preco_venda = 801.905, codigo_barras = '122229823', data_cadastro = '2023-08-10', origem = 'N' WHERE id = 11
+2023-09-01 20:36:57 : SELECT * FROM produto WHERE (preco_venda >= 35 and origem = 'N')
+2023-09-01 20:36:57 : SELECT * FROM produto WHERE id = 5
+2023-09-01 20:36:57 : UPDATE produto SET id = 5, descricao = 'Chocolate Doce', estoque = 15, preco_custo = 10, preco_venda = 99.9635, codigo_barras = '123789823', data_cadastro = '2023-08-10', origem = 'N' WHERE id = 5
+2023-09-01 20:36:57 : SELECT * FROM produto WHERE id = 7
+2023-09-01 20:36:57 : UPDATE produto SET id = 7, descricao = 'Bacalhau azedo', estoque = 153, preco_custo = 140, preco_venda = 1042.4765, codigo_barras = '122229823', data_cadastro = '2023-08-10', origem = 'N' WHERE id = 7
+2023-09-01 20:36:57 : SELECT * FROM produto WHERE id = 8
+2023-09-01 20:36:57 : UPDATE produto SET id = 8, descricao = 'Bacalhau azedo', estoque = 3, preco_custo = 140, preco_venda = 1042.4765, codigo_barras = '122229823', data_cadastro = '2023-08-10', origem = 'N' WHERE id = 8
+2023-09-01 20:36:57 : SELECT * FROM produto WHERE id = 9
+2023-09-01 20:36:57 : UPDATE produto SET id = 9, descricao = 'Tilápia boa', estoque = 153, preco_custo = 140, preco_venda = 1042.4765, codigo_barras = '122229823', data_cadastro = '2023-08-10', origem = 'N' WHERE id = 9
+2023-09-01 20:36:57 : SELECT * FROM produto WHERE id = 10
+2023-09-01 20:36:57 : UPDATE produto SET id = 10, descricao = 'Salmão bom', estoque = 153, preco_custo = 140, preco_venda = 1042.4765, codigo_barras = '122229823', data_cadastro = '2023-08-10', origem = 'N' WHERE id = 10
+2023-09-01 20:36:57 : SELECT * FROM produto WHERE id = 11
+2023-09-01 20:36:57 : UPDATE produto SET id = 11, descricao = 'Salmão bom', estoque = 153, preco_custo = 140, preco_venda = 1042.4765, codigo_barras = '122229823', data_cadastro = '2023-08-10', origem = 'N' WHERE id = 11
+2023-09-01 20:37:01 : SELECT * FROM produto WHERE (preco_venda >= 35 and origem = 'N')
+2023-09-01 20:37:01 : SELECT * FROM produto WHERE id = 5
+2023-09-01 20:37:01 : UPDATE produto SET id = 5, descricao = 'Chocolate Doce', estoque = 15, preco_custo = 10, preco_venda = 129.95255, codigo_barras = '123789823', data_cadastro = '2023-08-10', origem = 'N' WHERE id = 5
+2023-09-01 20:37:01 : SELECT * FROM produto WHERE id = 7
+2023-09-01 20:37:01 : UPDATE produto SET id = 7, descricao = 'Bacalhau azedo', estoque = 153, preco_custo = 140, preco_venda = 1355.21945, codigo_barras = '122229823', data_cadastro = '2023-08-10', origem = 'N' WHERE id = 7
+2023-09-01 20:37:01 : SELECT * FROM produto WHERE id = 8
+2023-09-01 20:37:01 : UPDATE produto SET id = 8, descricao = 'Bacalhau azedo', estoque = 3, preco_custo = 140, preco_venda = 1355.21945, codigo_barras = '122229823', data_cadastro = '2023-08-10', origem = 'N' WHERE id = 8
+2023-09-01 20:37:01 : SELECT * FROM produto WHERE id = 9
+2023-09-01 20:37:01 : UPDATE produto SET id = 9, descricao = 'Tilápia boa', estoque = 153, preco_custo = 140, preco_venda = 1355.21945, codigo_barras = '122229823', data_cadastro = '2023-08-10', origem = 'N' WHERE id = 9
+2023-09-01 20:37:01 : SELECT * FROM produto WHERE id = 10
+2023-09-01 20:37:01 : UPDATE produto SET id = 10, descricao = 'Salmão bom', estoque = 153, preco_custo = 140, preco_venda = 1355.21945, codigo_barras = '122229823', data_cadastro = '2023-08-10', origem = 'N' WHERE id = 10
+2023-09-01 20:37:01 : SELECT * FROM produto WHERE id = 11
+2023-09-01 20:37:01 : UPDATE produto SET id = 11, descricao = 'Salmão bom', estoque = 153, preco_custo = 140, preco_venda = 1355.21945, codigo_barras = '122229823', data_cadastro = '2023-08-10', origem = 'N' WHERE id = 11
+2023-09-01 20:37:18 : SELECT * FROM produto WHERE (preco_venda >= 35 and origem = 'N')
+2023-09-01 20:37:18 : SELECT * FROM produto WHERE id = 5
+2023-09-01 20:37:18 : UPDATE produto SET id = 5, descricao = 'Chocolate Doce', estoque = 15, preco_custo = 10, preco_venda = 168.938315, codigo_barras = '123789823', data_cadastro = '2023-08-10', origem = 'N' WHERE id = 5
+2023-09-01 20:37:18 : SELECT * FROM produto WHERE id = 7
+2023-09-01 20:37:18 : UPDATE produto SET id = 7, descricao = 'Bacalhau azedo', estoque = 153, preco_custo = 140, preco_venda = 1761.785285, codigo_barras = '122229823', data_cadastro = '2023-08-10', origem = 'N' WHERE id = 7
+2023-09-01 20:37:18 : SELECT * FROM produto WHERE id = 8
+2023-09-01 20:37:18 : UPDATE produto SET id = 8, descricao = 'Bacalhau azedo', estoque = 3, preco_custo = 140, preco_venda = 1761.785285, codigo_barras = '122229823', data_cadastro = '2023-08-10', origem = 'N' WHERE id = 8
+2023-09-01 20:37:18 : SELECT * FROM produto WHERE id = 9
+2023-09-01 20:37:18 : UPDATE produto SET id = 9, descricao = 'Tilápia boa', estoque = 153, preco_custo = 140, preco_venda = 1761.785285, codigo_barras = '122229823', data_cadastro = '2023-08-10', origem = 'N' WHERE id = 9
+2023-09-01 20:37:18 : SELECT * FROM produto WHERE id = 10
+2023-09-01 20:37:18 : UPDATE produto SET id = 10, descricao = 'Salmão bom', estoque = 153, preco_custo = 140, preco_venda = 1761.785285, codigo_barras = '122229823', data_cadastro = '2023-08-10', origem = 'N' WHERE id = 10
+2023-09-01 20:37:18 : SELECT * FROM produto WHERE id = 11
+2023-09-01 20:37:18 : UPDATE produto SET id = 11, descricao = 'Salmão bom', estoque = 153, preco_custo = 140, preco_venda = 1761.785285, codigo_barras = '122229823', data_cadastro = '2023-08-10', origem = 'N' WHERE id = 11

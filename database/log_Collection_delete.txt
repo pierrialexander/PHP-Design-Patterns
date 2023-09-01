@@ -1,0 +1,1 @@
+2023-09-01 23:01:21 : DELETE FROM produto WHERE (descricao like '%Bac%' or descricao like '%Salm%')
