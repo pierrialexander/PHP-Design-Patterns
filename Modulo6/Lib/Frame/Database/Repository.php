@@ -1,0 +1,142 @@
+<?php
+namespace Frame\Database;
+
+/**
+ * Classe Repository, parte do framework PHP para acesso a bancos de dados, especificamente projetado para
+ * realizar operações CRUD (Create, Read, Update, Delete) em objetos que representam registros de tabelas de banco de dados.
+ * Esta classe é responsável por carregar, excluir e contar objetos a partir de um critério definido,
+ * fornecendo uma interface para interagir com o banco de dados de forma abstrata e orientada a objetos.
+ * @author Pierri Alexander Vidmar
+ * @since 01/09/2023
+ */
+class Repository 
+{
+    private $activeRecord;
+
+    public function __construct($class)
+    {
+        $this->activeRecord = $class;
+    }
+
+    /**
+     * Método responsável por carregar objetos em lote a partir de um critério
+     * @param Criteria $criteria
+     * @return void
+     */
+    public function load(Criteria $criteria)
+    {
+        $sql = "SELECT * FROM " . constant($this->activeRecord . "::TABLENAME");
+
+        if($criteria)
+        {
+            $expression = $criteria->dump();
+            if($expression)
+            {
+                $sql .= ' WHERE ' . $expression;
+            }
+
+            $order  = $criteria->getProperty('order');
+            $limit  = $criteria->getProperty('limit');
+            $offset = $criteria->getProperty('offset');
+
+            if($order)
+            {
+                $sql .= ' ORDER BY ' . $order;
+            }
+
+            if($limit)
+            {
+                $sql .= ' LIMIT BY ' . $limit;
+            }
+
+            if($offset)
+            {
+                $sql .= ' OFFSET ' . $offset;
+            }
+
+            if($conn = Transaction::get())
+            {
+                Transaction::log($sql);
+                $result = $conn->query($sql);
+
+                if($result)
+                {
+                    $results = [];
+
+                    while($row = $result->fetchObject($this->activeRecord))
+                    {
+                        $results[] = $row;
+                    }
+                    return $results;
+                }
+
+            }
+            else
+            {
+                throw new Exception('Não há transação aberta!');
+            }
+        }
+    }
+
+    /**
+     * Método responsável por excluir objetos em lote a partir de um critério
+     * @param Criteria $criteria
+     * @return void
+     */
+    public function delete(Criteria $criteria)
+    {
+        $sql = "DELETE FROM " . constant($this->activeRecord . "::TABLENAME");
+
+        if($criteria) {
+            $expression = $criteria->dump();
+            if ($expression) {
+                $sql .= ' WHERE ' . $expression;
+            }
+        }
+
+        if($conn = Transaction::get())
+        {
+            Transaction::log($sql);
+            return $conn->exec($sql);
+        }
+        else
+        {
+            throw new Exception('Não há transação aberta!');
+        }
+
+    }
+
+    /**
+     * Método que fará a contagem de quantos objetos passam pelo critério
+     * @param Criteria $criteria
+     * @return void
+     */
+    public function count(Criteria $criteria)
+    {
+        $sql = "SELECT count(*) FROM " . constant($this->activeRecord . "::TABLENAME");
+
+        if($criteria) {
+            $expression = $criteria->dump();
+            if ($expression) {
+                $sql .= ' WHERE ' . $expression;
+            }
+        }
+
+        if($conn = Transaction::get())
+        {
+            Transaction::log($sql);
+            $result = $conn->query($sql);
+
+            if($result)
+            {
+                $row = $result->fetch();
+
+                return $row[0];
+            }
+        }
+        else
+        {
+            throw new Exception('Não há transação aberta!');
+        }
+    }
+}
